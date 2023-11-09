@@ -1,0 +1,9 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "*", features = ["macros", "rt-multi-thread"] }
+wasmtime-wasi = { version = "14.0.4" }
+wasmtime = { version = "14.0", features = ["component-model"] }
